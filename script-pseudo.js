@@ -1,18 +1,24 @@
 // ================
 // GLOBAL VARIABLES
 // ================
-// STEP 1
-// Create special character set using array
-// Create numeric character set using array
-// Create uppercase character set ising array
-// Create lowercase character set using array
+
+
+let lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+let uppercase = lowercase.join(" ").toUpperCase().split(" ");
+let specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", ""];
+let number = [1234567890];
 
 function generatePassword() {
+  let passwordLength = window.prompt("The password length must be a minimum of 8 characters and a maximum of 128 characters!");
+  if(passwordLength.length >= 8 && passwordLength.length <=128) {
+    return true;
+  }
+  else {
+    window.alert("Please clock Ok when asked that the password must be bewtween 8 to 128 characters!");
+    return false;
+  }
 
-  // STEP 2
-  // Create a variable to store the length of password user entered with window prompt
-  // Check if the length meets the minimim of 8 chars and the maximum of 128 chars
-  // If it fails the requirements, alert the user then return to the caller
+}
 
   // STEP 3
   // Create an option variable for special chars to store true or false returned from windeow confirm
@@ -44,6 +50,13 @@ function generatePassword() {
   // Convert the password array to a password string
   // Return the password string to the caller
 
+
+
+function getCharacterOptions() {
+  let getLower = confirm("Press OK to have Lowercase characters in password!");
+  let getUpper = confirm("Press OK to have Uppercase characters in password!");
+  let getSpecial = confirm("Press OK to have Special characters in password!")
+  let getNumbers = confirm("Press OK to have Number characters in password!");
 }
 
 
