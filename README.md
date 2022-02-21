@@ -1,9 +1,10 @@
-##PASSWORD GENERATOR
+# 03 JavaScript: Password Generator
 
 For Week 3 we were introduced to Java Script. For this homework assignemtn we were given starter code which included the Index.HTML, Style.CSS and part of the Script.JS. Our main focus was to complete the Java Script portion of the code.
 
 For this assignemtn we needed to use JavaScript to create a random password generator. There were certain requirements that we had to meet in order for the application to be successful which included:
-    ## Acceptance Criteria
+   
+   ## Acceptance Criteria
 
 ```
 GIVEN I need a new, secure password
@@ -33,3 +34,8 @@ To complete the accepted Criteria we had to follow certain steps in order to be 
     7. Next you create a For loop for the length of the password and in each iteration you create an random index from the array pool in Step 5.
     8. Then you check to make sure we include at least one character from the charater type (set) the user chose to inclue in the password.
     9. The last thing to do is to convert the password array to a password string and return the password string to the caller.
+
+![The Password Generator ".](./Assets/03-javascript-homework-demo.png)
+
+    GITHUB REPO URL: https://github.com/gabby-hdez/password-generator
+    Password-Generator URL: https://gabby-hdez.github.io/password-generator/
