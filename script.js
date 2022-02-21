@@ -1,9 +1,13 @@
 let lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 let uppercase = lowercase.join(" ").toUpperCase().split(" ");
-let specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", ""];
+let specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "_", "-", "+", "="];
 let number = [1234567890];
 
 function generatePassword() {
+  let passwordStr;
+
+
+  return passwordStr;
 
 }
 
@@ -16,6 +20,7 @@ function getLength() {
     window.alert("The password must be bewtween 8 to 128 characters!");
     return getLength();
   }
+
 }
 
 function getCharacterOptions() {
@@ -30,7 +35,12 @@ function getCharacterOptions() {
     if (tryAgain) {
       getCharacterOptions()
     }
-      return 
+  }
+  return {
+    getLower:getLower,
+    getUpper:getUpper,
+    getSpecial:getSpecial,
+    getNumbers:getNumbers
   }
 
 }
